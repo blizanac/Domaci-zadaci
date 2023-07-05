@@ -1,0 +1,4 @@
+1.SELECT ime,posao,broj_odeljenja FROM radnik WHERE posao IN ('analiticar','upravnik') AND broj_odeljenja=10;
+2.SELECT ime FROM radnik WHERE ime NOT ILIKE '%a%' LIMIT 5;
+3.SELECT ime,plata FROM radnik WHERE plata BETWEEN 2600 AND 3000;
+4.SELECT ime,plata,premija, FROM radnik WHERE posao='vozac' ORDER BY premija DESC;

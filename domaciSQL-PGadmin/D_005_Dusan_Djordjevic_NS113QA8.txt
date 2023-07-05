@@ -1,0 +1,5 @@
+1.	INSERT INTO  radnik (idbr,ime,posao,kvalifikacija,rukovodilac,datum_zaposlenja,premija,plata,broj_odeljenja) VALUES (7891,'Dusan','upravnik','KV',5842,'2023-04-11',0,1500,40);
+2.	SELECT * FROM odeljenje;
+3.	SELECT ime,kvalifikacija,plata FROM radnik;
+4.	UPDATE radnik SET kvalifikacija='VSS', plata=90000 WHERE idbr 20;
+5.	SELECT imeproj, sredstva FROM projekat WHERE sredstva <-=3000000;

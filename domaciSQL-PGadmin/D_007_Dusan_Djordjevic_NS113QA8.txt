@@ -1,0 +1,7 @@
+1. SELECT ime, kvalifikacija,plata,premija FROM radnik WHERE premija IS NOT NULL;
+2. SELECT  ROUND(AVG(plata),2) FROM radnik; 
+3. SELECT COUNT (*), MIN(plata), MAX (plata), AVG(plata) FROM radnik;
+4. SELECT  COUNT (*), ROUND(MIN(plata),2), ROUND(MAX(plata),2), ROUND(AVG(plata),2) FROM radnik WHERE broj_odeljenja=30; 
+5. SELECT kvalifikacija, MIN(plata), MAX (plata) FROM radnik WHERE broj_odeljenja IN (10,20) GROUP BY kvalifikacija;
+6. SELECT broj_odeljenja, AVG (plata) FROM radnik GROUP BY broj_odeljenja HAVING AVG(plata)>2000
+7. SELECT ime, MAX(plata) FROM radnik GROUP BY ime,plata ORDER BY plata DESC LIMIT 1;

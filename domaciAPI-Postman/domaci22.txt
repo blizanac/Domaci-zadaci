@@ -1,0 +1,20 @@
+Ispratiti instrukcije sa linka.
+
+Za pocetak se morate registrovati, ali mozete koristiti bilo koji nepostojeci email.
+
+U samom postman-u:
+Napraviti kolekciju pod nazivom domaci22
+Prvi request je List Books sa query parameters limit 3
+Ostale requestove iz linka napravite sami i isprobajte order sve akcije
+Za order morate biti ulogovani, tu koristite (kao sto sam vam ja pokazao) Authorization i token koji dobijete prilikom registracije (token sacuvati kao globalnu promenjivu, a zatim koristiti za dalje request-ove).
+
+Dodatno mozete smestiti url i token u promenljive na nivou kolekcije.
+
+Query parameters je sledece (boldovano)
+http://url.com?key=value&key2=value2
+I mozete u postmanu to setovati bez pisanja u url, nego u Parameters “tabu”, levo od Authorization.
+
+Authorization tab koristite za ono sto pise Bearer Token, za requestove gde morate da ste ulogovani.
+
+Domaci se predaje tako sto uradite export collection (https://learning.postman.com/docs/getting-started/importing-and-exporting-data/#exporting-collections), i da okacite na svoj drajv pod imenom domaci22.json
+Trebala bi ekstenzija po default-u da bude json, pa samo ime izmenite.

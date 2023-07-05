@@ -1,0 +1,7 @@
+1.SELECT ime, plata FROM radnik WHERE plata=(SELECT MAX (plata)FROM radnik);
+2.SELECT ime,kvalifikacija FROM radnik WHERE plata IN (SELECT plata FROM radnik WHERE ime='Jovan') ORDER BY ime DESC;
+3.SELECT ime,posao,plata FROM radnik WHERE broj_odeljenja=10 AND posao IN (SELECT posao FROM radnik WHERE broj_odeljenja IN (SELECT broj_odeljenja FROM odeljenje WHERE ime_odeljenja = 'Plan'));
+4.SELECT * FROM odeljenje WHERE broj_odeljenja IN (SELECT broj_odeljenja FROM radnik); 
+5.SELECT ime,plata + COALESCE (premija,0) AS "ukupna primanja" FROM radnik WHERE plata+ COALESCE (premija,0)>(SELECT AVG (plata+ COALESCE(premija,0)) FROM radnik);
+6.SELECT o.*,r.* FROM odeljenje o JOIN radnik r ON o.broj_odeljenja=r.broj_odeljenja WHERE ime_odeljenja iLIKE 'd%' OR ime_odeljenja ILIKE 'r%';
+
